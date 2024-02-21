@@ -14,6 +14,25 @@ export default defineConfig({
 					lang: 'de-DE',
 				},
 			},
+			sidebar: [
+				{
+					label: "Inhaltsverzeichnis",
+					items: [
+						{
+							label: "Startseite",
+							link: "/"
+						},
+						{
+							label: 'Tutorial',
+							autogenerate: { directory: 'Tutorial' },
+						},
+						{
+							label: 'Sammlung',
+							autogenerate: { directory: 'sammlung' },
+						},
+					],
+				},
+			],
 			
 			
 			customCss: ['./src/tailwind.css'],
