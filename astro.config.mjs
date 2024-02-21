@@ -7,6 +7,14 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'a11y@mtc.berlin',
+			defaultLocale: 'root',
+			locales: {
+				root: {
+					label: 'Deutsch',
+					lang: 'de-DE',
+				},
+			},
+			
 			
 			customCss: ['./src/tailwind.css'],
 		}),
