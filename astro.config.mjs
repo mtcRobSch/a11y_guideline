@@ -33,8 +33,10 @@ export default defineConfig({
 					],
 				},
 			],
-			
-			
+			components: {
+
+				Footer:  './src/layouts/footer.astro',
+			},
 			customCss: ['./src/tailwind.css'],
 		}),
 		tailwind({ applyBaseStyles: false }),
