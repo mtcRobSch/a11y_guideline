@@ -2,11 +2,11 @@
 import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/Footer.astro';
 ---
-<footer class="bg-gray-800 text-white py-4">
+<footer class="dark:bg-gray-800 text-white py-4">
     <Default {...Astro.props}><slot /></Default>
-    <div class="container mx-auto">
-        <p>&copy; 2024 ally@mtc.betlin | Alle Rechte vorbehalten.</p>
-        Hier ist der Footer
+    <div class="container mx-auto bg-gray-800">
+        <p>Stand: 26.02.2024 | &copy; 2024 ally@mtc.betlin | Alle Rechte vorbehalten.</p>
+        
     </div>
 </footer>
 
