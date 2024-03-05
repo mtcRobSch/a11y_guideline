@@ -1,0 +1,35 @@
+---
+title: Screenreader Test
+---
+import { Tabs, TabItem, CardGrid, Card } from '@astrojs/starlight/components';
+import KeyboardShortcuts from './src/components/vue/KeyboardShortcuts.vue'
+
+<Tabs>
+  <TabItem label="NVDA">Bild NVDA</TabItem>
+  <TabItem label="JAWS">
+  - Bild JAWS
+  - Tastebjinbus und Funktionen
+
+<div class="flex flex-row flex-wrap">
+<div class="basis-1/3">
+## Content Logo
+![JAWS Logo](../../../assets/jaws-logo.png)
+
+</div>
+<div class="basis-1/3">JAWS - Job access with System</div>
+<div class="basis-1/3">JAWS - Job access with System</div>
+</div>
+## Tastenkombinationen
+<KeyboardShortcuts />
+<div class="flex flex-row justify-center">
+<div class="w-1/3">Enter</div>
+<div class="w-2/3">Bestätigung</div>
+</div>
+
+  </TabItem>
+</Tabs>
+<div class="flex flex-row flex-wrap">
+<div class="w-1/3 bg-slate-200">col</div>
+<div class="w-1/3">col</div>
+<div class="w-1/3">col</div>
+</div>
