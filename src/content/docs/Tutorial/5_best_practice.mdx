@@ -1,20 +1,38 @@
 ---
-title: 5. Implementierung von Barrierefreiheitsprüfungen in der Praxis
---- 
-Dieses Kapitel behandelt die praktische Umsetzung von Barrierefreiheitsprüfungen auf Webseiten und Webanwendungen. Es bietet anwendungsbezogene Beispiele für die Identifikation und Behebung von Problemen in verschiedenen Elementen wie Formularen, Bildern und Multimedia-Inhalten, um die Barrierefreiheit zu testen und zu verbessern.
-## *Anwendung auf Webseiten und Webanwendungen*
+title: 5. Beispiele
+---
+import { CardGrid, Card, Icon } from '@astrojs/starlight/components';
 
-1. **Identifizierung von Problemen**: Wählen Sie eine Webanwendung oder Webseite aus und führen Sie eine Barrierefreiheitsprüfung durch. Identifizieren Sie Probleme wie fehlende Alternative Texte für Bilder, unklare Formulare oder Farbkontrastprobleme.
+In diesem Kapitel werden praktische Beispiele für Barrierefreiheitstests von Webseiten und Webanwendungen vorgestellt. Es werden typische Probleme aufgezeigt, die während solcher Tests auftreten können, sowie Lösungsansätze für eine verbesserte Zugänglichkeit.
 
-2. **Behebung von Problemen**: Nehmen Sie die notwendigen Änderungen vor, um die identifizierten Probleme zu beheben. Dies kann die Hinzufügung von Alternative Texten, die Anpassung von Formularen oder die Änderung von Farbkontrasten umfassen.
+Testszenarien:
+1. Formulare: Identifizieren und beheben Sie Probleme wie unklare Formularelemente, fehlende Beschriftungen oder Schwierigkeiten bei der Tastaturnavigation.
+2. Bilder: Überprüfen Sie alternative Texte für Bilder und stellen Sie sicher, dass sie angemessen beschrieben sind, um eine korrekte Interpretation durch Screenreader zu ermöglichen.
+3. Farbkontrast: Testen Sie den Farbkontrast von Texten und Hintergründen, um sicherzustellen, dass sie für Menschen mit Sehschwierigkeiten ausreichend lesbar sind.
+4. Multimedia-Inhalte: Prüfen Sie die Zugänglichkeit von Videos und Audiodateien durch die Bereitstellung von Untertiteln, Transkripten oder alternativen Darstellungsformen wie zum Beispiel Gebärdenspracvideo (DGS - deutsche Gebärdensprache).
 
+Mögliche Probleme und Lösungen:
+<Card class="custom-card bg-neutral-500 p-0 m-0 gap-0"><p class="bg-neutral-500 m-0">
+ Problem: Ein Bild enthält keinen alternativen Text.
+ - Lösung: Fügen Sie einen beschreibenden alternativen Text hinzu, der den Inhalt des Bildes präzise wiedergibt.
+ </p></Card>
+ <Card class="custom-card p-0 m-0 gap-0">
+ <p>
+ <Icon name="error" /> Problem: Ein Bild enthält keinen alternativen Text.
+ Lösung: Fügen Sie einen beschreibenden alternativen Text hinzu, der den Inhalt des Bildes präzise wiedergibt.
+ </p></Card>
+ <Card class="custom-card m-0 p-0 gap-0"><p>
+ Problem: Ein Bild enthält keinen alternativen Text.
+ - Lösung: Fügen Sie einen beschreibenden alternativen Text hinzu, der den Inhalt des Bildes präzise wiedergibt.
+ </p></Card>
 
-## Bewertung in der Praxis
+- Problem: Ein Bild enthält keinen alternativen Text.
+ - Lösung: Fügen Sie einen beschreibenden alternativen Text hinzu, der den Inhalt des Bildes präzise wiedergibt.
+- Problem: Ein Formularfeld hat keine Beschriftung.
+ -- Lösung: Fügen Sie eine klare Beschriftung hinzu, um den Zweck des Formularfelds zu erläutern und eine intuitive Navigation zu ermöglichen.
+- Problem: Der Farbkontrast zwischen Text und Hintergrund ist zu gering.
+ -- Lösung: Passen Sie die Farben so an, dass ein ausreichender Kontrast gewährleistet ist, um die Lesbarkeit für alle Benutzer zu verbessern.
+- Problem: Ein Video hat keine Untertitel.
+ -- Lösung: Fügen Sie Untertitel hinzu, damit hörbeeinträchtigte Benutzer den Inhalt des Videos verstehen können.
 
-1. Formulare: Evaluieren Sie die Barrierefreiheit von Formularen, indem Sie diese mit verschiedenen Eingabemethoden wie der Tastatur oder einem Screenreader ausfüllen. Achten Sie dabei auf die Lesbarkeit und Verständlichkeit der Formularfelder sowie auf die Reaktion auf Eingaben.
-
-2. Bilder: Beurteilen Sie die Barrierefreiheit von Bildern, indem Sie die alternativen Texte überprüfen und sicherstellen, dass sie für Screenreader-Benutzer zugänglich sind. Testen Sie auch die Reaktion auf Bildschirmvergrößerungen für sehbehinderte Benutzer.
-
-3. Multimedia-Inhalte: Überprüfen Sie die Barrierefreiheit von Multimedia-Inhalten wie Videos oder Audiodateien, indem Sie Untertitel oder Transkripte bereitstellen. Achten Sie ebenfalls auf die Steuerungsmöglichkeiten für Benutzer mit motorischen Einschränkungen.
-
-Durch diese praxisorientierten Szenarien können Sie Ihr Verständnis für die Barrierefreiheit von Webseiten und Webanwendungen vertiefen und wichtige Aspekte kennenlernen, um eine inklusive Online-Erfahrung für alle Benutzer zu gewährleisten.
+Die Beispiele vermitteln ein tieferes Verständnis für Barrierefreiheit, sodass alle, die an der Gestaltung von Webseiten beteiligt sind, lernen können, wie sie ihre Inhalte für eine breitere Nutzergruppe zugänglich machen.
